@@ -23,6 +23,11 @@
     <meta name="twitter:description" content="Logan Utah's premier laser engraving and MIG welding specialists serving Cache Valley.">
 
     <title>CE Fab Co | Laser Engraving & MIG Welding - Logan, Utah | Cache Valley</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/CE_Logo.jpeg">
+    <link rel="apple-touch-icon" href="images/CE_Logo.jpeg">
+
     <link rel="stylesheet" href="styles.css">
 
     <!-- Schema.org structured data -->
@@ -92,13 +97,20 @@
             <div class="nav-brand">
                 <img src="images/CE_Logo.jpeg" alt="CE Fab Co Logo" class="logo">
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#quote" class="btn btn-primary nav-quote-btn">Get a Quote</a>
+            </div>
         </div>
     </nav>
 
@@ -109,7 +121,7 @@
             <h1 class="hero-title">PRECISION METALWORK</h1>
             <p class="hero-subtitle">Laser Engraving & MIG Welding Specialists in Logan, Utah</p>
             <div class="hero-cta">
-                <a href="#contact" class="btn btn-large btn-primary">Request a Quote</a>
+                <a href="#quote" class="btn btn-large btn-primary">Request a Quote</a>
                 <a href="#portfolio" class="btn btn-large btn-secondary">View Our Work</a>
             </div>
         </div>
@@ -233,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-container">
+                <div class="contact-form-container" id="quote">
                     <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="e5765a88-3d91-4922-b4c3-64566ac24c09">
                         <input type="hidden" name="subject" value="New Quote Request from CE Fab Co Website">

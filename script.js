@@ -1,4 +1,35 @@
 // ===========================
+// Mobile Hamburger Menu Toggle
+// ===========================
+
+const hamburger = document.querySelector('.hamburger');
+const navWrapper = document.querySelector('.nav-wrapper');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navWrapper.classList.toggle('active');
+    document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : '';
+});
+
+// Close menu when clicking a link or quote button
+document.querySelectorAll('.nav-link, .nav-quote-btn').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navWrapper.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navWrapper.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navWrapper.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+// ===========================
 // Smooth Scrolling Navigation
 // ===========================
 
