@@ -1,0 +1,11 @@
+# robots.txt for CE Fab Co
+# Logan, Utah - Laser Engraving & MIG Welding Specialists
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.cefabco.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1

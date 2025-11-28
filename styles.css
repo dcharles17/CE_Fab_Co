@@ -350,6 +350,106 @@ section {
 }
 
 /* ===========================
+   About Section
+   =========================== */
+
+.about {
+    background: var(--light-bg);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    color: var(--secondary-color);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.about-text h3:first-child {
+    margin-top: 0;
+}
+
+.about-text p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    text-align: justify;
+}
+
+/* ===========================
+   Services Details
+   =========================== */
+
+.services-details {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--border-color);
+}
+
+.services-details h3 {
+    color: var(--secondary-color);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.services-details h3:first-child {
+    margin-top: 0;
+}
+
+.services-details p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+/* ===========================
+   FAQ Section
+   =========================== */
+
+.faq {
+    background: var(--text-light);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    background: var(--light-bg);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: all var(--transition-speed);
+}
+
+.faq-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--box-shadow);
+}
+
+.faq-item h3 {
+    color: var(--secondary-color);
+    font-size: 1.15rem;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-main);
+    font-weight: 700;
+}
+
+.faq-item p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ===========================
    Portfolio Section
    =========================== */
 
@@ -678,6 +778,14 @@ section {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text p {
+        text-align: left;
     }
 
     section {
