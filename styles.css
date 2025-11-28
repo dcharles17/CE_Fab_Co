@@ -193,6 +193,12 @@ section {
     display: block;
 }
 
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
